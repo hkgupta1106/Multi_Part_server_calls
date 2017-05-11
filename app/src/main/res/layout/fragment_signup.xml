@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginEnd="23dp"
+                      android:layout_marginStart="23dp"
+                      android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/ci_profilepic"/>
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="Name"
+                android:id="@+id/et_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:id="@+id/et_countrycode"
+                    android:textSize="@dimen/font_xxlarge"/>
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="Contact No"
+                android:id="@+id/et_contactno"
+                android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="Email"
+                android:id="@+id/et_email"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="20dp"
+                          android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Gender:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Female"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="Password"
+                android:id="@+id/et_password"/>
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:id="@+id/et_confirm_password"
+                android:hint="Confirm Password"/>
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:id="@+id/et_dob"
+                android:hint="Date Of Birth"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="I accepet Terms os services and privacy policy"/>
+
+
+            <Button
+                android:id="@+id/btn_Signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_button_background"
+                android:text="sign up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xlarge"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

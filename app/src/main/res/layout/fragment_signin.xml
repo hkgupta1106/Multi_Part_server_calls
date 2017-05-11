@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="34dp"
+    android:layout_marginStart="34dp"
+    android:orientation="vertical">
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="text"
+        android:id="@+id/et_email"/>
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/et_password"/>
+
+    <CheckBox
+        android:id="@+id/tv_ForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:text="Remember Me"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_Signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Forgot Password"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_background"
+        android:text="Signin"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
